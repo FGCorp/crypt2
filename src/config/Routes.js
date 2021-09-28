@@ -7,6 +7,7 @@ import {
   Cryptocurrencies,
   CryptoDetails,
   News,
+  NotFound,
 } from "../component";
 
 function Routes() {
@@ -30,6 +31,10 @@ function Routes() {
 
       <Route exact path="/news">
         <News />
+      </Route>
+
+      <Route>
+        <NotFound />
       </Route>
     </Switch>
   );

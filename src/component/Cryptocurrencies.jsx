@@ -84,7 +84,12 @@ function Cryptocurrencies({ coinsData, loadingList, simplified, getCoins }) {
                   Market Cap: {millify(coin.marketCap || 0)}
                 </Paragraph>
                 <Paragraph>
-                  Daily Change: {millify(coin.change || 0)}%
+                  Daily Change:{" "}
+                  <Text
+                    type={millify(coin.change || 0) < 0 ? "danger" : "success"}
+                  >
+                    {millify(coin.change || 0)}%
+                  </Text>
                 </Paragraph>
               </Card>
             </Link>
