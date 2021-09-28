@@ -12,5 +12,22 @@
   <lastmod>2021-09-28T06:54:41+00:00</lastmod>
 </url>
 
+<url>
+  <loc>https://cryp2.netlify.app/news</loc>
+  <lastmod>2021-09-28T07:04:41+00:00</lastmod>
+   <changefreq>daily</changefreq>
+</url>
+
+<url>
+  <loc>https://cryp2.netlify.app/cryptocurrencies</loc>
+  <lastmod>2021-09-28T07:04:41+00:00</lastmod>
+   <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://cryp2.netlify.app/exchanges</loc>
+  <lastmod>2021-09-28T07:04:41+00:00</lastmod>
+   <changefreq>daily</changefreq>
+</url>
 
 </urlset>
