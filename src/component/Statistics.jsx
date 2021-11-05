@@ -11,7 +11,6 @@ const gridStyle = {
 };
 function Statistics({ coinsData, loadingList }) {
   const loadingCoins = loadingList.find((item) => item.id === "2")?.loading;
-
   return (
     <Card
       title={
@@ -45,7 +44,7 @@ function Statistics({ coinsData, loadingList }) {
       <Grid style={gridStyle}>
         <Statistic
           title="Total 24h Volume"
-          value={millify(coinsData?.data?.stats.total24hVolume || 0)}
+          value={coinsData?.data?.stats.total24hVolume}
         />
       </Grid>
 
