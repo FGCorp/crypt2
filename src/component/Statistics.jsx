@@ -44,7 +44,7 @@ function Statistics({ coinsData, loadingList }) {
       <Grid style={gridStyle}>
         <Statistic
           title="Total 24h Volume"
-          value={coinsData?.data?.stats.total24hVolume}
+          value={millify(coinsData?.data?.stats.total24hVolume || 0)}
         />
       </Grid>
 
