@@ -47,8 +47,9 @@ const crypto = {
     async getCoinHistory(data) {
       const params = {
         method: "get",
-        url: "/coin/" + data.id + "/history/" + data.time,
+        url: "/coin/" + data.id + "/history",
         id: "5",
+        timePeriod: data.time,
       };
       const response = await Services.runServiceCrypto(params);
       this.coinHistoryReducer(response);

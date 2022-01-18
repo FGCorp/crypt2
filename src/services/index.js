@@ -2,7 +2,7 @@ import axios from "axios";
 import store from "../store";
 
 const runServiceCrypto = (params) => {
-  const { method, data, url, id } = params;
+  const { method, data, url, id, timePeriod } = params;
   store.dispatch.loading.setLoading({ id, loading: true });
 
   return axios({
@@ -10,7 +10,7 @@ const runServiceCrypto = (params) => {
     url: "https://coinranking1.p.rapidapi.com" + url,
     params: {
       referenceCurrencyUuid: "yhjMzLPhuIDl",
-      timePeriod: "24h",
+      timePeriod: timePeriod === undefined ? "24h" : timePeriod,
       tiers: "1",
       orderBy: "marketCap",
       orderDirection: "desc",

@@ -96,6 +96,7 @@ function CryptoDetails({
   ];
 
   useEffect(() => {
+    console.log(coinId);
     getCoin(coinId.coinId);
     getCoinHistory({ id: coinId.coinId, time: timePeriod });
   }, []);

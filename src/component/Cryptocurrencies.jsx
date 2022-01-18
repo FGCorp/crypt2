@@ -60,10 +60,11 @@ function Cryptocurrencies({ coinsData, loadingList, simplified, getCoins }) {
         )
       }
     >
+      {console.log(coins)}
       <Row gutter={[32, 32]} className="crypto-car-container">
         {coins?.map((coin) => (
           <Col xs={24} sm={12} lg={6} className="crypto-card" key={coin.id}>
-            <Link to={`/crypto/${coin.id}`}>
+            <Link to={`/crypto/${coin.uuid}`}>
               <Card
                 title={
                   <Text style={{ color: coin.color }}>
